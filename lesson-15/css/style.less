@@ -1,0 +1,435 @@
+.main_head {
+	margin-top: 5%;   /*отступ сверху относительно материнского элемента*/
+}
+.main_logo_border {          /*стиль обводки*/
+	border: 3px solid #706b73;
+	text-align: center;
+	width: 149px;
+	height: 55px;
+	line-height: 48px;    /*Центрирование текста в рамке по вертикали (межстрочный интервал); указывается размер близкий к высоте рамки*/
+    
+}
+/*Стиль текста внутри обводки*/
+.main_logo_border p {
+	font-size: 36px;
+	color: #706b73;
+	font-weight: 600;  /*вес*/
+	font-family: 'Open Sans', sans-serif; 
+
+}
+.S_color_logo {
+	color: #fc6744;
+	opacity: 0.6; /* Полупрозрачность элемента */
+}
+.main_nav_bar {
+	height: 55px;
+}
+.line {
+	right: 0;
+	top: 14%;
+	width: 34px;
+	height: 4px;
+	position: absolute;
+	display: inline-block;
+	background-color: #706b73;
+	-webkit-border-radius: 5px;   /*Для считывания браузерами (-brs  CTRL+TAB)*/
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	}
+.line:before {
+	right: 0;
+	top: 200%;
+	content: ''; /*обязательный атрибут*/
+	width: 34px;
+	height: 4px;
+	position: absolute;
+	background-color: #706b73;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+.line:after {
+	right: 0;
+	top: -200%;
+	content: ''; /*обязательный атрибут*/
+	width: 34px;
+	height: 4px;
+	position: absolute;
+	background-color: #706b73;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+/* Вёрстка главного заголовка и формы */
+/* fonts files */
+.opn_reg{
+	font-family:'Open Sans', sans-serif;
+	font-weight: 400;
+}
+.opn_bold{
+	font-family:'Open Sans', sans-serif;
+	font-weight: 600;
+}
+/* base color */
+@base_orange: #ff5c36;
+@base_black: #000;
+@white: #fff;
+@bg_tomi: #4eb2f7;
+@bg_koimona: #c049f8;
+@bg_koire: #817eff;
+@bg_lara: #f74770;
+@bg_services_list: #fbfbfb;
+
+body {
+	font-size: 14px;
+	.opn_reg;
+	color: @base_black;
+} 
+section {
+	padding-top: 14%;
+	h2 {
+		font-size: 50px;
+		.opn_bold;
+		color: lighten(@base_black, 40%);
+		span {
+			color: lighten(@base_orange, 5%);
+		}
+	}
+	p {
+		font-size: 16px;
+		.opn_reg;
+		color: lighten(@base_black, 45%);
+		line-height: 25px;
+	}
+	
+	h6 {
+		font-size: 16px;
+		.opn_reg;
+		color: @white;
+	}
+	
+}
+.content {
+	padding-top: 7%;
+	}
+
+.section_header {
+	h2 {
+		font-size: 50px;
+		.opn_bold;
+		color: lighten(@base_black, 40%);
+		span {
+			color: lighten(@base_orange, 5%);
+		}
+	}
+	p {
+		font-size: 16px;
+		.opn_reg;
+		color: lighten(@base_black, 45%);
+	}
+}
+
+header {
+	background: url(../img/main-bg.png) no-repeat center center;
+	height: 975px;
+	background-size: cover;
+}
+input, button, textarea {
+	&:focus {
+		outline: none;
+	}
+}
+
+.main {
+	&_text {
+		margin-top: 10%;
+		text-align: center;
+		h1 {
+			font-size: 50px;
+			.opn_bold;
+			color: lighten(@base_black, 40%);
+			span {
+				color: lighten(@base_orange, 5%);
+			}
+		}
+		p {
+			color: lighten(@base_black, 45%);
+			.opn_reg;
+			font-size: 16px;
+			line-height: 25px;
+			margin-top: 5%;
+		}
+	}
+	&_form {
+		    margin-top: 37%;
+		    -webkit-box-shadow: 0px 0px 57px 0px rgba(28, 28, 21, 0.2);
+			-box-shadow: 0px 0px 57px 0px rgba(28, 28, 21, 0.2);
+			-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			-ms-border-radius: 2px;
+			-o-border-radius: 2px;
+			border-radius: 2px;
+			padding: 35px;
+            background-color: @white;
+		&_header {
+			text-align: center;
+			font-size: 20px;
+			color: lighten(@base_black, 35%);
+			.opn_bold;
+			span {
+				color: lighten(@base_orange, 5%);
+			}
+
+		}
+		&_btn {
+			background-color: @base_orange;
+			border: none;
+			padding: 20px 65px;
+			color: @white;
+			.opn_reg;
+			font-size: 16px;
+			-webkit-border-radius: 50px;
+			-moz-border-radius: 50px;
+			-ms-border-radius: 50px;
+			-o-border-radius: 50px;
+			border-radius: 50px;
+			display: block;
+			margin: 20px auto 0;
+			-webkit-transition: all 0.3s;
+			&:hover {
+			box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.15);
+			}
+			span {
+
+				position: absolute;
+				font-size: 20px;
+				margin-left: 70px;
+				-webkit-transform: translateY(-25px);
+				-ms-transform: translateY(-25px);
+				-o-transform: translateY(-25px);
+				transform: translateY(-25px);
+			}
+		}
+
+		input, textarea {
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid lighten(@base_black, 80%);
+			margin-top: 30px;
+			font-size: 15px;
+		}
+	}
+}
+/* Section process */
+.process {
+	&_box {
+		color: @white;
+		padding: 53px 30px 69px;
+		text-align: center;
+		i.fa {
+			font-size: 50px;
+		}
+		h4 {
+			margin-top: 21px;
+			font-size: 20px;
+			.opn_bold;
+		}
+		p {
+			color: @white;
+			line-height: 22px;
+			margin-top: 18px;
+			font-size: 15px;
+			.opn_reg;
+		}	
+		&:hover {  /* эффект при наведении */
+			box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21);
+		}
+	}
+
+	&_btn {
+		position: absolute;
+		margin-top: 38px;
+		margin-left: -38%;
+		border: none;
+		color: lighten(@base_black, 40%);
+		background-color: @white;
+		padding: 20px;
+		width: 76%;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		-ms-border-radius: 50px;
+		-o-border-radius: 50px;
+		border-radius: 50px;
+		-webkit-transition: all 0.2s;
+		.opn_reg;
+		font-size: 16px;
+		&:hover {
+			box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.09);
+		}
+	}
+}
+.btn_plus {
+	vertical-align: middle;
+	margin-right: 14px;
+	width: 16px;
+	height: 1px;
+	display: inline-block;
+	background-color: lighten(@base_black, 40%);
+	&:before {
+	width: 16px;
+	height: 1px;
+	display: inline-block;
+	background-color: lighten(@base_black, 40%);
+	position: absolute;
+	content: '';	
+	-webkit-transform: rotate(90deg) translateY(8px);
+	-ms-transform: rotate(90deg) translateY(8px);
+	-o-transform: rotate(90deg) translateY(8px);
+	transform: rotate(90deg) translateY(8px);
+
+	}
+}
+.box {
+	&_tomi {
+		background-color: @bg_tomi;
+	}
+	&_koimona {
+		background-color: @bg_koimona;
+	}
+	&_koire {
+		background-color: @bg_koire;
+	}
+	&_lara {
+		background-color: @bg_lara;
+	}
+}
+.fa-camera-retro {
+	-webkit-transform: rotate(-15deg);
+	-ms-transform: rotate(-15deg);
+	-o-transform: rotate(-15deg);
+	transform: rotate(-15deg);
+}
+/* Works section */
+.works_box {
+	margin-top: 7%;
+	height: 360px;
+	position: relative;
+}
+.signature {         
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);  /* затемнение картинки */
+	color: @white;
+	text-align: center;      /* выравнивание контента по центру картинки */
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	-webkit-justify-content: center;
+	-webkit-align-items:center;
+	-webkit-transition: all 0.3s;  /* Плавность проявления эффектов. Можно прописывать определённые, например: opacity */
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	&:hover {
+		opacity: 1; /* эффект при наведении */
+	}
+}  
+.sign {            /* стиль контента на картинке */
+	p {
+	.opn_bold;
+	font-size: 22px;
+	color: @white;
+	}
+	button {
+		.opn_reg;
+	    font-size: 16px;
+		border: none;
+		padding: 15px 35px;
+		background-color: @base_orange;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		-ms-border-radius: 50px;
+		-o-border-radius: 50px;
+		border-radius: 50px;
+	}
+}
+/* Services We Provide */
+.services {
+	&_list {
+		list-style: none;  /* Убирает маркеры из списка */
+			&_item {
+			display: block;
+			margin: 5px auto;
+			width: 100px;
+			height: 100px;
+			text-align: center;
+			background-color: lighten(@base_black, 98%);
+			&:hover {
+				box-shadow: 0px 6px 50px 6px rgba(20, 20, 21, 0.12);
+			}
+				.image {
+					display: absolute;
+					padding: 25%;
+				}
+			}
+	}
+	&_btn {
+		margin-top: 18px;
+		border: none;
+		border: 1px solid lighten(@base_black, 94%);
+		color: lighten(@base_black, 40%);
+		background-color: @white;
+		padding: 15px 55px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		-ms-border-radius: 50px;
+		-o-border-radius: 50px;
+		border-radius: 50px;
+		-webkit-transition: all 0.2s;    /* плавность появления эффекта */
+		.opn_reg;
+		font-size: 16px;
+		box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.09);
+		&:hover {
+			box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.15);
+		}
+	}
+
+}
+.shift {
+	h4 {
+		font-size: 30px;
+		.opn_reg;
+		color: lighten(@base_black, 45%);
+	}
+}
+.sevices_line {
+		display: inline-block;
+		width: 60px;
+		height: 3px;
+		background-color: @base_orange;
+		margin-bottom: 1%;
+		margin-top: 1%;
+	}
+.shift {
+	margin-left: 15%;
+}
+.panel-title {
+	    text-align: center;
+		font-size: 15px;
+		.opn_bold;
+		color: @base_orange;
+}
+.panel-default {
+	becground-color: lighten(@base_orange, 5%);
+}
