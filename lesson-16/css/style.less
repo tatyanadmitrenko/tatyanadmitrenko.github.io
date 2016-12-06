@@ -86,6 +86,7 @@
 @bg_koire: #817eff;
 @bg_lara: #f74770;
 @bg_services_list: #fbfbfb;
+@yelow: #ffef3b;
 
 body {
 	font-size: 14px;
@@ -93,7 +94,7 @@ body {
 	color: @base_black;
 } 
 section {
-	padding-top: 14%;
+	padding-top: 12%;
 	h2 {
 		font-size: 50px;
 		.opn_bold;
@@ -117,7 +118,7 @@ section {
 	
 }
 .content {
-	padding-top: 7%;
+	padding-top: 6%;
 	}
 
 .section_header {
@@ -204,7 +205,7 @@ input, button, textarea {
 			margin: 20px auto 0;
 			-webkit-transition: all 0.3s;
 			&:hover {
-			box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.15);
+			box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.09);
 			}
 			span {
 
@@ -430,4 +431,92 @@ input, button, textarea {
 		.opn_bold;
 		color: @base_orange;
 }
-
+.panel-default {
+	becground-color: lighten(@base_orange, 5%);
+}
+/* Feedback section */       /* слайдер */
+.feedback {
+	&-box {
+		margin-left: 15px;
+		margin-right: 15px;
+		
+		p {
+			font-size: 17px;
+			margin-top: 8px;
+			margin-bottom: 10px;
+			padding-left: 50px;
+			padding-right: 50px;
+			span {
+				.opn_bold
+			}
+			i {
+				font-size: 14px;
+			}
+		}
+		i.fa-star {
+			color: @yelow;
+		}
+	}
+	&-shadow {
+		padding-bottom: 20px;
+		padding-top: 74px;
+		box-shadow: 0px 0px 27px 0px rgba(20, 20, 21, 0.09);
+	}
+	&-img {
+		margin-bottom: -64px;
+	}
+	&-slider-arrows {             /* оформление стрелок */
+		position: absolute;
+		top: 50%;
+		z-index: 999;      /* передвигает элемент на верхний слой (в данном случае стрелка начинает работать, когда она на верхнем слое)*/ 
+		font-size: 17px;
+		height: 50px;
+		width: 50px;
+		color: lighten(@base_black, 45%);
+		background-color: @white;
+		-webkit-transform: translateY(-9px);
+		-ms-transform: translateY(-9px);
+		-o-transform: translateY(-9px);
+		transform: translateY(-9px);
+		box-shadow: 0px 3px 14px 0px rgba(20, 20, 21, 0.15);
+		padding: 17px;
+		text-align: center;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-o-border-radius: 50%;
+		border-radius: 50%;
+		&:hover {
+			background-color: @base_orange;
+			color: @white;
+			cursor: pointer;
+		}
+		
+	}
+}
+.slick-active {         /* убрать голубую рамку? */
+	outline: none;
+}
+.arrow-left {
+	left: -30px;
+}
+.arrow-right {
+	right: -30px;
+	
+}
+.slick-dots li button:before {       /* маркеры навигации */
+    width: 19px;
+    height: 6px;
+    margin-top: 44px;
+    background-color: lighten(@base_black, 45%);
+    color: transparent;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+}
+.slick-dots li.slick-active button:before {
+	color: transparent;
+	background-color: @base_orange;
+}

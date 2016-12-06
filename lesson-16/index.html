@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <!-- <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> --> <!-- 3 KB --> <!-- Подключение css из сервера сайта фоторамы -->
+    <!-- <link  href="fotorama/fotorama.css" rel="stylesheet"> --> <!-- 3 KB --> <!-- Подключение папки с css фоторамы из дирректории сайта -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css"> <!-- подключение файлов слик из папки сайта-->
     <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -359,29 +362,131 @@
         </div> <!-- /container -->
       </section>
 
-        <section id="frama">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="fotorama">
-                  <img src="http://s.fotorama.io/1.jpg">
-                  <img src="http://s.fotorama.io/2.jpg">
-                  <img src="http://s.fotorama.io/2.jpg">
-                  <img src="http://s.fotorama.io/2.jpg">
-                  <img src="http://s.fotorama.io/2.jpg">
-                  <img src="http://s.fotorama.io/2.jpg">
+        <section id="slider">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 section_header text-center">
+                  <h2><span>Clients</span> Said</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus expedita, dolor corporis!</p>
+                  
+                </div>
+              </div> <!-- /row -->
+              <div class="row content">
+                <div class="col-lg-12">
+                  <div class="feedback-slider">
+                    <div class="feedback-slider-item text-center">
+                      <div class="feedback-box">
+                      <img class="img-circle feedback-img center-block" src="img/feedback/1.jpg" alt="">
+                      <div class="feedback-shadow">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illo perferendis autem dolorem, earum natus temporibus velit! Voluptates corporis illo aspernatur incidunt quos, cupiditate debitis molestias aliquam.</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p><span>Kita Say</span> , <i>HK Director</i></p>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="feedback-slider-item text-center">
+                      <div class="feedback-box">
+                      <img class="img-circle feedback-img center-block" src="img/feedback/2.jpg" alt="">
+                      <div class="feedback-shadow">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illo perferendis autem dolorem, earum natus temporibus velit! Voluptates corporis illo aspernatur incidunt quos, cupiditate debitis molestias aliquam.</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p><span>Kita Say</span> , <i>HK Director</i></p>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="feedback-slider-item text-center">
+                      <div class="feedback-box">
+                      <img class="img-circle feedback-img center-block" src="img/feedback/3.jpg" alt="">
+                      <div class="feedback-shadow">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illo perferendis autem dolorem, earum natus temporibus velit! Voluptates corporis illo aspernatur incidunt quos, cupiditate debitis molestias aliquam.</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p><span>Kita Say</span> , <i>HK Director</i></p>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="feedback-slider-item text-center">
+                      <div class="feedback-box">
+                      <img class="img-circle feedback-img center-block" src="img/feedback/4.jpg" alt="">
+                      <div class="feedback-shadow">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illo perferendis autem dolorem, earum natus temporibus velit! Voluptates corporis illo aspernatur incidunt quos, cupiditate debitis molestias aliquam.</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p><span>Kita Say</span> , <i>HK Director</i></p>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="feedback-slider-item text-center">
+                      <div class="feedback-box">
+                      <img class="img-circle feedback-img center-block" src="img/feedback/5.jpg" alt="">
+                      <div class="feedback-shadow">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illo perferendis autem dolorem, earum natus temporibus velit! Voluptates corporis illo aspernatur incidunt quos, cupiditate debitis molestias aliquam.</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p><span>Kita Say</span> , <i>HK Director</i></p>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="feedback-slider-item text-center">
+                      <div class="feedback-box">
+                      <img class="img-circle feedback-img center-block" src="img/feedback/6.jpg" alt="">
+                      <div class="feedback-shadow">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illo perferendis autem dolorem, earum natus temporibus velit! Voluptates corporis illo aspernatur incidunt quos, cupiditate debitis molestias aliquam.</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p><span>Kita Say</span> , <i>HK Director</i></p>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>  
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- fotorama.css & fotorama.js. -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> --> <!-- 16 KB --> <!-- Подключение к серверу сайта фоторамы -->
+    <!-- <script src="fotorama/fotorama.js"></script> --> <!-- 16 KB --> <!-- Подключение папки фоторама из дирректории сайта -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="slick/slick.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+        $('.feedback-slider').slick({
+          infinite: true,     /*бесконечная прокрутка*/
+          slidesToShow: 2,     /*количество слайдов показываем*/
+          slidesToScroll: 2,  /*количество слайдов запускаем*/
+          arrows: true,
+          prevArrow: '<i class="fa feedback-slider-arrows arrow-left fa-chevron-left"></i>',
+          nextArrow: '<i class="fa feedback-slider-arrows arrow-right fa-chevron-right"></i>',
+          dots: true
+
+        });
+      });
+    </script>
   </body>
 </html>
