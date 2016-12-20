@@ -27,6 +27,25 @@
   </head>
   <body>
 
+  <div class="fixed_header">
+    <div class="container">
+      <div class="row main_head">
+          <!-- Левый столбец (логотип) -->
+          <div class="col-xs-6 logo_border">
+            <div class="main_logo_border">
+              <p><span class="S_color_logo">S</span>mart</p>
+            </div>
+          </div>
+          <!-- Правый столбец (навигация) -->
+          <div class="col-xs-6 main_nav_bar main_nav">
+            <a href="#">
+              <span class="line"></span>
+            </a>
+          </div>    
+        </div>
+    </div>
+  </div>
+
     <!-- Шапка сайта -->
   <header id="main">
     <div class="video-container">
@@ -68,6 +87,7 @@
         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 wow shake" data-wow-delay="0.1s">
           <h1><span>Smart</span> Agency Landign Page</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates        doloremque rerum aspernatur dolorum at!</p>
+          <a class="slowly" href="#slider">Посмотреть отзывы</a>
         </div>
       </div>
       <div class="row"> <!-- Новый блок -->
@@ -762,8 +782,10 @@
           <br>
           <br>
 
-
-
+  <!-- Прокрутка наверх -->
+  <a href="#" class="totop">
+    Наверх
+  </a>
 
 
 
@@ -956,6 +978,43 @@
     </script>
 
     <script src="js/parallax.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("a.slowly").on("click", function (event) {
+          //отменяем стандартную обработку нажатия по ссылке
+          event.preventDefault();
+
+          //забираем идентификатор бока с атрибута href
+          var id  = $(this).attr('href'),
+
+          //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top +90;
+          
+          //анимируем переход на расстояние - top за 1500 мс
+          $('body,html').animate({scrollTop: top}, 2000);
+        });
+      });
+    </script>
+
+    <!-- Прокрутка наверх -->  <!-- "Прилипучка меню" -->
+    <script type="text/javascript">
+    $(function() {
+      $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {
+          $('.totop').fadeIn();
+          $('.fixed_header').fadeIn();
+        } 
+        else {
+          $('.totop').fadeOut();
+          $('.fixed_header').fadeOut();
+        }
+      });
+      $('.totop').click(function() {
+        $('body,html').animate({scrollTop:0},1500);
+      });
+    });
+</script>
 
 
   </body>

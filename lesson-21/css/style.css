@@ -964,7 +964,10 @@ Modal Window
     margin-top: 50px;
   }
   .works_box {
-    height: 253px;
+    width: 280px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 0px;
   }
   .services_list_item {
@@ -977,8 +980,14 @@ Modal Window
     -o-border-radius: 50px;
     border-radius: 50px;
   }
+  .services_list_item .image {
+    width: 100px;
+  }
   .services_list {
     display: inline-block;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .feedback-shadow p {
     font-size: 13px;
@@ -1067,8 +1076,11 @@ Modal Window
     margin-top: 50px;
   }
   .works_box {
-    height: 567px;
+    width: 350px;
+    height: auto;
     margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .services_list_item {
     display: inline-block;
@@ -1117,14 +1129,6 @@ Modal Window
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .main_text h1 {
-    font-size: 40px;
-    line-height: 45px;
-  }
-  .main_text p {
-    font-size: 16px;
-    line-height: 25px;
-  }
   .main_text h1 {
     font-size: 40px;
     line-height: 45px;

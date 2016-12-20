@@ -929,6 +929,7 @@ Modal Window
 }
 
 /* Стили адаптивной вёрстки */
+// Еще мне переключатели табов не нравятся, лучше их адаптировать, сделать все 4 в ряд
 @media (min-width: 0px) and (max-width: 480px) {
 	.main_text {
 		h1 {
@@ -999,7 +1000,11 @@ Modal Window
 		margin-top: 50px;
 	}
 	.works_box {
-		height: 253px;
+		// То же самое проделаем для самых маленьких экранов
+		width: 280px;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
 		margin-bottom: 0px;
 	}
 	.services_list_item {
@@ -1012,8 +1017,16 @@ Modal Window
 		-o-border-radius: 50px;
 		border-radius: 50px;
 	}
+	.services_list_item .image {
+		width: 100px;
+	}
+	// Это лучше разобрать чуть позже, интересно работает hover, завтра посмотрю как это устроено, чтобы правильно адаптировать :)
 	.services_list {
 		display: inline-block;
+		padding: 0;
+		margin-left: auto;
+		margin-right: auto;
+		
 	}
 	.feedback-shadow {
 		p {
@@ -1126,8 +1139,13 @@ Modal Window
 		margin-top: 50px;
 	}
 	.works_box {
-		height: 567px;
+		width: 350px;
+		height: auto;
 		margin-bottom: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		// Здесь мы задали для это блока фиксированную ширину, высота подстроилась под ширину автоматически
+		// Далее выровняли блок по центру
 	}
 	.services_list_item {
 		display: inline-block;
@@ -1190,16 +1208,17 @@ Modal Window
 		line-height: 25px;
 		}
 	}
-	.main_text {
-		h1  {
-		font-size: 40px;
-		line-height: 45px;
-		}
-		p {
-		font-size: 16px;
-		line-height: 25px;
-		}
-	}
+	// .main_text {
+	// 	h1  {
+	// 	font-size: 40px;
+	// 	line-height: 45px;
+	// 	}
+	// 	p {
+	// 	font-size: 16px;
+	// 	line-height: 25px;
+	// 	}
+	// }
+	// Здесь был повтор, лучше таких моментов остерегаться :)
 	.process {
 		&_box {
 		margin-bottom: 90px;
