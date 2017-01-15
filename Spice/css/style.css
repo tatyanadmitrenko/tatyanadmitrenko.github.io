@@ -1,0 +1,74 @@
+.Roboto_reg {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.Roboto_bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+/* base color */
+/* Главный экран */
+section#main {
+  background-color: #385f4f;
+  height: 100vh;
+}
+section#main .main_header {
+  margin-top: 8%;
+}
+section#main h1 {
+  font-size: 138px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+section#main p {
+  font-size: 23px;
+  letter-spacing: 0.5px;
+  color: #92f8ce;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+section#main h3 {
+  font-size: 43px;
+  letter-spacing: 0.5px;
+  line-height: 59px;
+  color: #92f8ce;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+section#main h2 {
+  margin-top: 5%;
+  font-size: 51px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+section#main .box {
+  border: 2px solid #ffffff;
+  height: 63px;
+  width: 1%;
+  color: #ffffff;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  margin-left: 48%;
+}
+section#main span {
+  font-size: 25px;
+}
+section#main .pattern_top {
+  position: absolute;
+}
+section#main .pattern_bottom {
+  position: absolute;
+  margin-top: 44%;
+}
+section#main .bags {
+  position: absolute;
+  right: 13%;
+  bottom: 13%;
+}
